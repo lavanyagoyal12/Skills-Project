@@ -151,12 +151,6 @@ Prefer `PythiaID.from_pdgid()` / `.to_pdgid()` — `Pythia2PDGIDBiMap` is deprec
 - A string given to `findall` is a fuzzy name match, not a glob: `"K[+-]"` and `"pi*"` match nothing. Use a lambda with `fnmatch` for patterns.
 - `Particle` has **no `decay_modes` attribute** — for branching fractions and decay chains use the `decaylanguage` package.
 
-## Interop
-
-- **pyhepmc** — `GenParticle.pid` → `PDGID`
-- **decaylanguage** — shares particle names; `.dec` parsing
-- **hepunits** — `p.ctau > 1 * meter` works because `ctau` is in mm
-- **vector / awkward** — convert mass to GeV first
 
 ## References
 
